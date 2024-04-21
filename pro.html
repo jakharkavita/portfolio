@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    
+</head>
+<style>.image-container {
+    width: 1360px; /* Adjust width as needed */
+    height: 700px; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .image-container img:first-child {
+    opacity: 1;
+  }
+  header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+.box {
+    width: 600px; /* Adjust width as needed */
+    height: 650px; /* Adjust height as needed */
+    /* background-color: red ;Adjust background color and opacity as needed */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    right: 20px; /* Adjust the distance from the right as needed */
+    transform: translate(0, -50%); /* Center the box vertically */
+    z-index: 999; /* Ensure the box stays on top of images */
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Added padding for better spacing */
+    overflow-y: auto; /* Added for vertical scrolling if content exceeds box height */
+}
+
+/* Adjusted style for content within the box */
+.box ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Align text to left */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+.box ul li{
+    font-size: x-large;
+}
+.bo {
+    width: 600px; /* Adjust width as needed */
+    height: 650px; /* Adjust height as needed */
+    /* background-color: red ;Adjust background color and opacity as needed */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    right: 20px; /* Adjust the distance from the right as needed */
+    transform: translate(0, -50%); /* Center the box vertically */
+    z-index: 999; /* Ensure the box stays on top of images */
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Added padding for better spacing */
+    overflow-y: auto;
+    margin-top: 850px;
+}
+.bo ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Align text to left */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+.bo ul li{
+    font-size: xx-large;
+    margin-top:10px;
+}
+  </style>
+<body>
+    <header>
+        <h1>Projects and Coding Samples</h1>
+      </header>
+    <div class="image-container">
+        <img src="Screenshot 2024-04-03 004724.png" alt="Image 1">
+        <img src="Screenshot 2024-04-03 005832.png" alt="Image 2">
+        <img src="Screenshot 2024-04-03 164959.png" alt="Image 5">
+        <img src="Screenshot 2024-04-03 165056.png" alt="Image 6">
+        <img src="Screenshot 2024-04-03 005858.png" alt="Image 3">
+        <img src="Screenshot 2024-04-03 005938.png" alt="Image 4">
+      </div>
+      <div class="box">
+        <ul>
+            <li>Our E-commerce platform serves as a direct link between farmers and consumers, revolutionizing the agricultural supply chain.
+                With an intuitive interface and robust features, we empower farmers to showcase their produce directly to consumers.
+                Through voice support, farmers can effortlessly list their goods for sale, enhancing accessibility and convenience.
+                Moreover, our platform acts as a liaison between farmers and contractors, facilitating the leasing of agricultural equipment. 
+                This feature streamlines operations for farmers, providing them with access to essential tools while optimizing costs.
+                Built using HTML5, CSS, and JavaScript, our platform is designed for seamless navigation and user interaction. Whether you're
+                a farmer looking to reach a broader market or a consumer seeking fresh produce, our E-commerce solution offers a transformative 
+                experience, fostering direct connections and promoting sustainability in agriculture.</li>
+        </ul>
+    </div>
+ <header>
+        <a href="https://github.com/vrandamanihar/Khet_se_Ghar.git"><h1>GitHub Link</h1></a>
+      </header>
+      <!-- <header>
+        <h1>Projects and Coding Samples</h1>
+      </header> -->
+    <div class="image-container">
+        <img src="project_2.4.png" alt="Image 1">
+        <img src="project_2.3.png" alt="Image 2">
+        <img src="project_2.2.png" alt="Image 6">
+        <img src="project_2.1.png" alt="Image 3">
+        
+      </div>
+      <div class="bo">
+        <ul>
+            <li>Certainly! Here's a revised version:
+                "A food delivery website with an exquisite user interface. The technologies employed include HTML and CSS.
+                 It also features sections for our services, client testimonials, and a contact us page." 
+                 In addition, it includes a form where clients can provide their name, contact number, email,
+                  and write their reviews or messages.</li>
+        </ul>
+    </div>
+ <header>
+        <a href="https://github.com/vrandamanihar/Khet_se_Ghar.git"><h1>GitHub Link</h1></a>
+      </header>
+</body>
+<script> const images = document.querySelectorAll('.image-container img');
+    let currentIndex = 0;
+  
+    setInterval(() => {
+      images[currentIndex].style.opacity = 0;
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].style.opacity = 1;
+    }, 1500); 
+    
+// Change image every 3 seconds (adjust as needed)</script>
+</html>
